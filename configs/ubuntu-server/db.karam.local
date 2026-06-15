@@ -1,1 +1,6 @@
-
+$TTL 604800
+@ IN SOA ns1.karam.local. admin.karam.local. (3 604800 86400 2419200 604800)
+@ IN NS ns1.karam.local.
+ns1 IN A 192.168.10.10
+server IN A 192.168.10.10
+client IN A 192.168.10.50
