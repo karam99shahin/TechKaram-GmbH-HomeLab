@@ -1,1 +1,30 @@
+# iptables rules - TechKaram GmbH
+# Generated: June 2026
+
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+
+# --- INPUT chain ---
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -s 192.168.56.0/24 -p tcp --dport 22 -j ACCEPT
+-A INPUT -s 192.168.10.0/24 -p tcp --dport 22 -j ACCEPT
+-A INPUT -p tcp --dport 53 -j ACCEPT
+-A INPUT -p udp --dport 53 -j ACCEPT
+-A INPUT -s 192.168.10.0/24 -j ACCEPT
+-A INPUT -j DROP
+
+# --- FORWARD chain (Inter-VLAN Routing) ---
+-A FORWARD -i enp0s3 -o enp0s10 -j ACCEPT
+-A FORWARD -i enp0s10 -o enp0s3 -j ACCEPT
+-A FORWARD -i enp0s10 -o enp0s10 -j DROP
+-A FORWARD -i enp0s3.40 -o enp0s3 -j ACCEPT
+-A FORWARD -i enp0s3 -o enp0s3.40 -j ACCEPT
+-A FORWARD -i enp0s10.30 -j DROP
+-A FORWARD -i enp0s10.50 -j DROP
+
+COMMIT
+
 
