@@ -9,31 +9,23 @@ Active Directory, Group Policy, firewall rules, and RAID storage.
 ## Network Diagram
 
 [Internet]
-   |
+    |
+    v
 [Ubuntu Server - 192.168.10.10]
-Gateway / Router / DHCP / DNS / Firewall
-   |
-   +--- VLAN10 - IT - 192.168.10.0/24
-   |       |
-   |       +--- Windows Server - 192.168.10.20
-   |       +--- Client1 - 192.168.10.50
-   |       +--- WinClient1 - 192.168.10.30
-   |
-   +--- VLAN20 - Development - 192.168.20.0/24
-   |       |
-   |       +--- Client2 - 192.168.20.50
-   |
-   +--- VLAN30 - Accounting - 192.168.30.0/24
-   |       |
-   |       +--- Client3 - 192.168.30.50
-   |
-   +--- VLAN40 - Management - 192.168.40.0/24
-   |       |
-   |       +--- Client4 - 192.168.40.50
-   |
-   +--- VLAN50 - Sales - 192.168.50.0/24
-           |
-           +--- Client5 - 192.168.50.50
+(Gateway / Router / DHCP / DNS / Firewall)
+    |
+    +------------------+------------------+------------------+------------------+
+    |                  |                  |                  |                  |
+    v                  v                  v                  v                  v
+[VLAN10 - IT]    [VLAN20 - Dev]    [VLAN30 - Acc]    [VLAN40 - Mgmt]    [VLAN50 - Sales]
+192.168.10.0/24  192.168.20.0/24  192.168.30.0/24  192.168.40.0/24   192.168.50.0/24
+    |                  |                  |                  |                  |
+    +--+--+            |                  |                  |                  |
+    |  |  |            |                  |                  |                  |
+    v  v  v            v                  v                  v                  v
+[WS] [C1] [WC1]      [C2]               [C3]               [C4]               [C5]
+10.20 10.50 10.30    20.50              30.50              40.50              50.50
+
 
 ## Technologies Used
 
