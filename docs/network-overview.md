@@ -29,8 +29,6 @@ Active Directory, Group Policy, firewall rules, and RAID storage.
       |---[ VLAN50 - Sales - 192.168.50.0/24 ]
                 |--[ Client5 - 192.168.50.50 ]
 
-`
-
 ## Technologies Used
 
 - Virtualization: Oracle VirtualBox
