@@ -29,16 +29,13 @@ Active Directory, Group Policy, firewall rules, and RAID storage.
       |———[ VLAN50 — Sales — 192.168.50.0/24 ]
                 |——[ Client5 — 192.168.50.50 ]
 
-
 ## Technologies Used
 
-- **Virtualization:** Oracle VirtualBox
-- **OS (Server):** Ubuntu Server 24.04 LTS
-- **OS (Domain):** Windows Server 2022
-- **OS (Clients):** Ubuntu 24.04, Windows 11 Pro
-- **Networking:** netplan, iptables, BIND9, isc-dhcp-server
-- **Storage:** mdadm (RAID 1)
-- **Directory Services:** Active Directory Domain Services (AD DS)
-- **Remote Access:** OpenSSH, VS Code Remote-SSH
-
-                
+- Virtualization: Oracle VirtualBox
+- OS (Server): Ubuntu Server 24.04 LTS
+- OS (Domain): Windows Server 2022
+- OS (Clients): Ubuntu 24.04, Windows 11 Pro
+- Networking: netplan, iptables, BIND9, isc-dhcp-server
+- Storage: mdadm (RAID 1)
+- Directory Services: Active Directory Domain Services (AD DS)
+- Remote Access: OpenSSH, VS Code Remote-SSH
