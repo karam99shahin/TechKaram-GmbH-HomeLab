@@ -129,7 +129,3 @@ This project demonstrates:
 
 ---
 
-## 👤 Author
-
-Karam — IT Enthusiast preparing for:
-Fachinformatiker Systemintegration (Germany)
