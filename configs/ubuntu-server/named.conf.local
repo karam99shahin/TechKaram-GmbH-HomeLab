@@ -1,4 +1,4 @@
 zone "karam.local"{
 type master;
-file "/etc/bind/db.karam.local";
+file "/etc/bind/db.karam99.local";
 };
