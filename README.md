@@ -62,6 +62,7 @@ Network includes:
 - VLAN-based network segmentation
 - Inter-VLAN routing
 - Static and dynamic IP management
+- Samba file server (department-based network shares on RAID)
 
 ### Windows Server
 - Active Directory Domain Services (AD DS)
@@ -95,6 +96,9 @@ Network includes:
 - RAID 1 mirror configuration using mdadm
 - Ext4 filesystem
 - Designed for redundancy and fault tolerance
+- Shared across the network via Samba (SMB protocol)
+- Each department has a dedicated share on the RAID array
+- Access controlled per department group
 
 ---
 
@@ -110,6 +114,7 @@ Network includes:
 - Group Policy Management
 - iptables
 - mdadm
+- Samba (SMB file sharing)
 
 ---
 
