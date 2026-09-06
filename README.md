@@ -78,6 +78,8 @@ Network includes:
 - DNS server (BIND9)
 - Firewall configuration (iptables)
 - RAID 1 storage configuration (mdadm)
+- osTicket help desk system (Docker-based, department ticketing)
+- Docker (container management)
 
 ---
 
@@ -115,6 +117,8 @@ Network includes:
 - iptables
 - mdadm
 - Samba (SMB file sharing)
+- Docker
+- osTicket
 
 ---
 
